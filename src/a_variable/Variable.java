@@ -66,7 +66,9 @@ public class Variable {
 		
 		System.out.print("줄바꿈을 하지 않는다.");
 		System.out.print("줄바꿈을 하지 않는다.\n");
-		System.out.println("탭을\t한다." + name);
+		System.out.println("A" + 5);
 		System.out.printf("문자열 : %s, 숫자 : %d", "Hello", 10);
+		
+		
 	}
 }
