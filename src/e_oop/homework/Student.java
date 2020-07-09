@@ -11,10 +11,9 @@ public class Student {
 	}
 	
 	
-	String[] doingHomework(String[] homework){
-		System.out.println("과제하는중" + homework[0]);
-		System.out.println("과제하는중" + homework[1]);
-	return new String[]{"SQL레포트","JAVA레포트"};
+	String doingHomework(String homework){
+		System.out.println("과제하는중 ... " + homework);
+	return homework + " 레포트";
 	}
 	
 	

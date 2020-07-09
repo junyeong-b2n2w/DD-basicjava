@@ -10,14 +10,16 @@ public class Professer {
 		String[] homework = st.getHomework();
 		System.out.println(Arrays.toString(homework));
 		st.play("게임");
-		st.play("게임");
+		st.play("밥먹");
 		st.play("게임");
 		
-		st.doingHomework(homework);
+		String report1 = st.doingHomework(homework[0]);
+		st.play("유툽");
 		st.play("게임");
-		st.play("게임");
-		st.play("게임");
-		st.doingHomework(homework);
+		st.play("친구");
+		String report2 = st.doingHomework(homework[1]);
+		
+		System.out.println("과제완료 !! :  " + report1 + "," + report2);
 		
 		
 		
