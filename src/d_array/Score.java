@@ -71,7 +71,8 @@ public class Score {
 			System.out.printf("%d\t", sum[i]);
 			System.out.print(avg[i]+"\t");
 			System.out.printf("%d\n", rank[i]);
-		}}
+		}
+			}
 		}
 		
 		// 과목별 합 , 평균 출력
