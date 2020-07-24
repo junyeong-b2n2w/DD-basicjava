@@ -62,9 +62,9 @@ public class Board {
 		
 		  while(true){
 	           
-			  	System.out.println("----------------------");
-				System.out.println("번호\t제목\t작성자\t작성일");
-				System.out.println("----------------------");
+			  	System.out.println("----------------------------------------------------------------------------------");
+				System.out.println("번호\t제목\t\t\t\t\t\t\t작성자\t작성일");
+				System.out.println("----------------------------------------------------------------------------------");
 				
 				// 게시글 출력
 				for (HashMap<String, Object> eachlist :board) {
@@ -74,8 +74,8 @@ public class Board {
 				}
 
 				//선택지 보기
-				System.out.println("----------------------");
-				System.out.println("1.게시글 보기 2.등록\t3.삭제\t4.종료");
+				System.out.println("----------------------------------------------------------------------------------");
+				System.out.println("1.게시글 보기\t 2.등록\t3.삭제\t4.종료");
 				
 			
 				input = Integer.parseInt(sc.nextLine());
@@ -101,7 +101,7 @@ public class Board {
 	                    break;
 	                case 4:
 	                	System.exit(0);
-	                    break;
+	                    break; 
 	              
 	                case 0:
 	               
@@ -111,6 +111,7 @@ public class Board {
 	        }//
 		
 		
+		   
 		
 	
 }
@@ -143,14 +144,14 @@ public class Board {
 			
 				if((int)eachlist.get("num")==showNum){
 					
-					System.out.println("----------------");
-					System.out.println("제목 : " + eachlist.get("title") );
-					System.out.println("글번호 : " + eachlist.get("num") );
-					System.out.println("작성자 : " + eachlist.get("author") );
-					System.out.println("작성시간 : " + eachlist.get("date") );
-					System.out.println("----------------");
+					System.out.println("----------------------------------------------------------------------------");
+					System.out.println("제목  \t:" + eachlist.get("title") );
+					System.out.println("글번호  \t:" + eachlist.get("num") );
+					System.out.println("작성자  \t:" + eachlist.get("author") );
+					System.out.println("작성시간  \t:" + eachlist.get("date") );
+					System.out.println("----------------------------------------------------------------------------");
 					System.out.println(eachlist.get("text"));
-					System.out.println("----------------");
+					System.out.println("----------------------------------------------------------------------------");
 
 				}
 				
